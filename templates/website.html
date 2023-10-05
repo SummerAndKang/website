@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/image9.png') }}">
+    <title>SNK Data Analytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='website-styles.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="main-header">
+            <div class="left-section">
+                <img src="{{ url_for('static', filename='img/image7.png') }}"  alt="Image" onclick="openNewWindow()">
+            </div>
+
+            <script>
+                function openNewWindow() {
+                    window.open('{{ url_for("main") }}', '_blank');
+                }
+            </script>
+            <div class="middle-section">
+                <a href="{{ url_for('Who_we_are')}}" class="middle-button" target="_blank">
+                    Who We Are
+                </a>
+                <a href="{{ url_for('Case_study')}}" class="middle-button" target="_blank">
+                    Case Study
+                </a>
+            </div>
+            <div class="right-section">
+                <button class="right-button" onclick="openContactUsWindow()">
+                    Contact Us
+                </button>
+
+                <script>
+                    function openContactUsWindow() {
+                        window.open('{{ url_for("Contact_us") }}', '_blank');
+                    }
+                </script>
+            </div>
+        </div>
+    </div>  
+
+    <div class="main">
+        <div class="main-top">
+            <div class="main-top-top">
+                <div class="main-top-top-left">
+                    <div>
+                        Delivering top-tier <span>DATA ANALYTICS</span>, <span>DATA ENGINEERING</span>, and <span>DATA SCIENCE</span> services that empower businesses to harness the full potential of their data
+                    </div>
+                </div>
+                <div class="main-top-top-right">
+                    <img src="{{ url_for('static', filename='img/image1.png') }}">
+                </div> 
+            </div>
+        </div>
+        <div class="main-second">
+            <div class="main-second-top">
+                    OUR CLIENTS
+            </div>
+            <div class="main-second-bottom">
+                <img src="{{ url_for('static', filename='img/image3.png') }}">
+                <img src="{{ url_for('static', filename='img/image2.png') }}">
+            </div>
+        </div>    
+        <div class="main-third">
+            <div class="main-third-top">
+                OUR SERVICES
+            </div>
+            <div class="main-third-bottom">
+                <div class="main-third-bottom-div">
+                    <img src="{{ url_for('static', filename='img/image4.png') }}">
+                    <div class="main-third-bottom-div-title">
+                        DATA ANALYTICS
+                    </div>
+                    <div class="main-third-bottom-div-content">
+                        &#x2022 Data Visualisation
+                    </div>
+                    <div class="main-third-bottom-div-content">
+                        &#x2022 Customised Report
+                    </div>
+                    <div class="main-third-bottom-div-content">
+                        &#x2022 Advanced Data Insights
+                    </div>
+                </div>
+                <div  class="main-third-bottom-div">
+                    <img src="{{ url_for('static', filename='img/image5.png') }}">
+                    <div class="main-third-bottom-div-title">
+                        DATA ENGINEERING
+                    </div>
+                    <div class="main-third-bottom-div-content">
+                        &#x2022 Data Pipeline Architecture
+                    </div>
+                    <div class="main-third-bottom-div-content">
+                        &#x2022 ETL (Extract, Transform, Load)
+                    </div>
+                    <div class="main-third-bottom-div-content">
+                        &#x2022 Data Quality and Governance
+                    </div>
+                </div>
+                <div  class="main-third-bottom-div">
+                    <img src="{{ url_for('static', filename='img/image6.png') }}">
+                    <div class="main-third-bottom-div-title">
+                        DATA SCIENCE
+                    </div>
+                    <div class="main-third-bottom-div-content">
+                        &#x2022 Predictve Analytics
+                    </div>
+                    <div class="main-third-bottom-div-content">
+                        &#x2022 Machine Learning Framework
+                    </div>
+                    <div class="main-third-bottom-div-content">
+                        &#x2022 Natural Language Processing
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="main-fourth">
+            <div class="main-fourth-top">
+                <div class="main-fourth-top-left">
+                    <img src="{{ url_for('static', filename='img/image8.png') }}">
+                </div>
+                <div class="main-fourth-top-right">
+                    <div class="main-fourth-top-right-contact">
+                        Contact Us
+                    </div>
+                    <div class="main-fourth-top-right-text">
+                        SNK Data Analytics &#40 ABN 45 112 487 966 &#41
+                    </div>
+                    <div class="main-fourth-top-right-text">
+                        Email: 
+                        <a href="mailto:snkdataconsulting@gmail.com?subject=Hello%20from%20me">
+                            snkdataconsulting@gmail.com
+                        </a>
+                    </div>
+                    <div class="main-fourth-top-right-text">
+                        Phone: 0420 296 663
+                    </div>
+                    <div class="main-fourth-top-right-text">
+                        Location: 80 Waterloo Road, Macquarie Park, NSW 2113
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

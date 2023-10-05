@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/image9.png') }}">
+    <title>Case Study</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='case-study.css') }}">
+</head>
+<body>
+    <div class="header">
+        <div class="main-header">
+            <div class="left-section">
+                <img src="{{ url_for('static', filename='img/image7.png') }}"  alt="Image" onclick="openNewWindow()">
+            </div>
+
+            <script>
+                function openNewWindow() {
+                    window.open('{{ url_for("main") }}', '_blank');
+                }
+            </script>
+            <div class="middle-section">
+                <a href="{{ url_for('Who_we_are')}}" class="middle-button" target="_blank">
+                    Who We Are
+                </a>
+                <a href="{{ url_for('Case_study')}}" class="middle-button" target="_blank">
+                    Case Study
+                </a>
+            </div>
+            <div class="right-section">
+                <button class="right-button" onclick="openContactUsWindow()">
+                    Contact Us
+                </button>
+
+                <script>
+                    function openContactUsWindow() {
+                        window.open('{{ url_for("Contact_us") }}', '_blank');
+                    }
+                </script>
+            </div>
+        </div>
+    </div>  
+    <div class="main">
+        <div class="main-top">
+            <div class="main-top-top">
+                <div class="main-top-top-left">
+                    <img src="{{ url_for('static', filename='img/image10.png') }}">
+                </div>
+                <div class="main-top-top-right">
+                    <div  class="main-top-top-right-title">
+                        2021 Australian Census Dashboard
+                    </div>
+                    <div  class="main-top-top-right-text">
+                        &#x2022 Multi-Metrics Population Composition Analysis at Postcode Level
+                    </div>
+                    <div class="main-top-top-right-text">
+                        &#x2022 In-depth Data Insights based on population, percentages, indices
+                    </div>
+                    <div class="main-top-top-right-text">
+                        &#x2022 Effective Data Cleansing with Microsoft SQL
+                    </div>
+                    <div class="main-top-top-right-text">
+                        &#x2022 Dynamic Data Visualisation using Power BI
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main-second"></div>
+        <div class="main-third"></div>
+        <div class="main-fourth"></div>
+    </div>
+</body>
